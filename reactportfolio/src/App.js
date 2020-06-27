@@ -13,6 +13,7 @@ function App() {
             <div>
                 <NavBar />
                 <Wrapper>
+                    <Route exact path="/" component={About} />
                     <Route exact path="/About.js" component={About} />
                     <Route exact path="/Portfolio.js" component={Portfolio} />
                     <Route exact path="/Contact.js" component={Contact} />
