@@ -1,10 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import NavBar from 'components/nav.js'
-import AboutP from 'pages/About.js';
-import PortfolioP from 'pages/Portfolio.js';
-import ContactP from 'pages/Contact.js';
-import Wrapper from 'components/wrapper.js';
+import About from './pages/About';
+import NavBar from './components/NavBar'
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
+import Wrapper from "./components/wrapper";
+import './App.css';
 
 function App() {
     return (
@@ -12,10 +13,9 @@ function App() {
             <div>
                 <NavBar />
                 <Wrapper>
-                    <Route exact path="/" component={AboutP} />
-                    <Route exact path="/about" component={AboutP} />
-                    <Route exact path="/portfolio" component={PortfolioP} />
-                    <Route exact path="/contact" component={ContactP} />
+                    <Route exact path="/About.js" component={About} />
+                    <Route exact path="/Portfolio.js" component={Portfolio} />
+                    <Route exact path="/Contact.js" component={Contact} />
                 </Wrapper>
             </div>
         </Router>
